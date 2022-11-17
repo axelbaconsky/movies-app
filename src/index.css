@@ -56,7 +56,7 @@ code {
 
 .movie-over {
   position: absolute;
-  color: #22254b;
+  color: #fff;
   padding: 1rem;
   bottom: 0;
   left: 0;
@@ -66,7 +66,7 @@ code {
   box-shadow: 0px -3px 5px rgba(0,0,0,0.1);
   overflow: auto;
   max-height: 100%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.915);
   transform: translateY(102%);
   transition: transform 0.3s ease-in-out;
 }
@@ -78,7 +78,7 @@ code {
 header {
    background-color: #373b69;
    padding: 1rem;
-   justify-content: flex-end;
+   justify-content: space-between;
    display: flex;
 }
 
@@ -114,4 +114,45 @@ header {
 }
 .tag.red {
   color: red;
+}
+
+.genreList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.genreList li {
+  list-style: none;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  background-color: #373b69;
+  border-radius: 5px;
+}
+
+.genreList li:hover {
+  filter: brightness(120%);
+}
+
+.genreList li a:focus {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+
+.genreList li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+}
+
+#title {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
 }
